@@ -7,3 +7,6 @@
 
 # Ignore version file
 versions.md
+
+# Ignore map file from SASS
+*.map
