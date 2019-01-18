@@ -1,0 +1,31 @@
+.topnav{
+	.topnav__list{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.topnav__list-item{
+			list-style-type: none;
+			margin: 0 1.875rem 0 1.875rem;
+
+			.topnav__list-item--link{
+				font-size: 1.875rem;
+				font-weight: bold;
+				text-decoration: none;
+				text-transform: uppercase;
+				color: $col1;
+				text-shadow: 0 0 5px $col4;
+
+				&:hover{
+					color: $col4;
+					text-shadow: 0 0 5px $col1;
+				}
+			}
+		}
+	}
+}
+
+.midnav{
+	.midnav_list
+
+}
