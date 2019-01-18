@@ -8,7 +8,7 @@
 		"cel3 cel3 cel4 cel7 cel9"
 		"cel3 cel3 cel5 cel7 cel9"
 		"cel3 cel3 cel5 cel8 cel10";
-	grid-grap: 0;
+	// grid-gap: 0;
 	// place-items: stretch stretch;
 	// place-content: stretch stretch;
 
@@ -57,5 +57,61 @@
 	
 	.gridpic__figure10{
 		grid-area: cel10;
+	}
+}
+
+.about{
+	height: 90vh;
+	display: grid;
+	background-color: $col4;
+
+	grid-template-columns: 50vw 30vw 20vw;
+	grid-template-rows: 1fr;
+	grid-template-areas:
+		"zone1 zone2";
+	grid-gap: 0;
+
+	max-width: 100%;
+	max-height: 100%;
+
+	.about__text{
+		grid-area: zone1;
+		place-self: center center;
+		text-align: center;
+		background-color: $col3;
+
+		.about__text-para{
+			font-size: 20px;
+			padding: 100px;
+
+			.about__text-para1{
+			
+			}
+			
+			.about__text-para2{
+			
+			}
+
+			.about__text-para3{
+			
+			}
+		}
+	}
+
+	.about__img{
+		grid-area: zone2;
+		place-self: center center;
+
+	}
+
+	.about__button{
+		justify-items: end;
+		align-items: end;
+
+		.about__button-link{
+			list-style-type: none;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
 	}
 }
