@@ -1,0 +1,62 @@
+.about{
+	height: 90vh;
+	display: grid;
+	background-color: $col4;
+
+	grid-template-columns: 50vw 30vw 20vw;
+	grid-template-rows: 1fr;
+	grid-template-areas:
+		"zone1 zone2 zone3";
+
+	// max-width: 100%;
+	// max-height: 100%;
+
+	.about__text{
+		grid-area: zone1;
+		place-self: center center;
+		text-align: center;
+		background-color: $col3;
+
+		.about__text-para{
+			.about__text-item {
+				margin: 50px;
+				font-size: 1.5rem;
+
+				.about__text--item1{
+				}
+					
+				.about__text--item2{
+				}
+	
+				.about__text--item3{
+				}
+			}
+		}
+	}
+
+	.about__img{
+		grid-area: zone2;
+		background-color: $col3;
+		place-self: center center;
+
+	}
+
+	.about__button{
+		grid-area: zone3;
+
+		.about__button--link{
+			
+			background-color: $col2;
+			color: $col6;
+			
+			padding: 5px 20px 5px 20px;
+			list-style-type: none;
+			text-decoration: none;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+}
+
+
+
