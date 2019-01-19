@@ -1,0 +1,30 @@
+.footer{
+	.footer-block1{
+		height: 20vh;
+		display: flex;
+		color: $col1;
+		justify-content: center;
+		align-items: center;
+		background-color: $col6;
+		font-weight: bold;
+		font-size: 1.5em;
+	}
+
+	.footer-block2{
+
+		.footer-block2__list{
+			height: 10vh;
+			display: flex;
+			background-color: #000;
+			justify-content: space-evenly;
+			align-items: center;
+			list-style-type: none;
+			
+			.footer-block2__list-item{
+				color: $col1;
+				text-decoration: none;
+			}
+		}
+	}
+
+}
