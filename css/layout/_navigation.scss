@@ -1,25 +1,28 @@
 .topnav{
 	.topnav__list{
 		display: flex;
+		flex-flow: row wrap;
 		justify-content: center;
 		align-items: center;
-		flex-wrap: wrap;
 
 		.topnav__list-item{
 			list-style-type: none;
 			margin: 0 1.875rem 0 1.875rem;
 
 			.topnav__list-item--link{
-				font-size: 1.875rem;
+				font-size: 2rem;
 				font-weight: bold;
 				text-decoration: none;
 				text-transform: uppercase;
 				color: $col1;
-				text-shadow: 0 0 5px $col4;
 
 				&:hover{
-					color: $col4;
-					text-shadow: 0 0 5px $col1;
+					text-shadow: 1px 1px 5px $col4;
+				}
+
+				&:active{
+					color: $col3;
+					text-shadow: 1px 1px 5px $col5;
 				}
 			}
 		}
