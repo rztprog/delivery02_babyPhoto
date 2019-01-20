@@ -9,6 +9,17 @@
 			list-style-type: none;
 			margin: 0 1.875rem 0 1.875rem;
 
+			.topnav__list-item-second{
+				background-color: $col2;
+				// justify-self: center;				
+			
+				.topnav__list-item--logo{
+				// justify-self: center;				
+				// width: 50%;
+				// height: 50%;
+				}
+			}
+
 			.topnav__list-item--link{
 				font-size: 2rem;
 				font-weight: bold;
