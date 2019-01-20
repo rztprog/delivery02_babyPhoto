@@ -4,23 +4,22 @@
 	background-color: $col4;
 
 	grid-template-columns: 50vw 30vw 20vw;
-	grid-template-rows: 1fr;
+	grid-template-rows: 90vh;
 	grid-template-areas:
 		"zone1 zone2 zone3";
-
-	// max-width: 100%;
-	// max-height: 100%;
 
 	.about__text{
 		grid-area: zone1;
 		place-self: center center;
 		text-align: center;
 		background: linear-gradient($col2, $col3);
+		max-height: 100%;
+		text-wrap: wrap;
 
 		.about__text-para{
-			.about__text-item {
+			.about__text-item{
 				margin: 50px;
-				font-size: 1.5rem;
+				font-size: 1rem;
 
 				.about__text--item1{
 				}
@@ -36,19 +35,25 @@
 
 	.about__img{
 		grid-area: zone2;
-		background: linear-gradient($col1, $col2, $col3, $col4, $col5, $col6);
+		background-color: $col3;
 		place-self: center center;
-		-webkit-clip-path: circle(50%);
-		clip-path: circle(50%);
+		-webkit-clip-path: circle(35% at 50% 50%);
+		clip-path: circle(35% at 50% 50%);
+		
+		.about__img--profile{
+			width: 100%;
+		}
 	}
 
 	.about__button{
 		grid-area: zone3;
 		place-self: end end;
+		max-height: 100%;
 		.about__button--link{
 			background-color: $col2;
 			color: $col6;			
-			padding: 5px 20px 5px 20px;
+			padding: 0 20px 0 20px;
+			// margin: 5px 20px 5px 20px;
 			list-style-type: none;
 			text-decoration: none;
 			font-weight: bold;
@@ -56,6 +61,3 @@
 		}
 	}
 }
-
-
-
