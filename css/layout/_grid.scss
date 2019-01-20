@@ -1,6 +1,6 @@
 .gridpic{
 	display: grid;
-	grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+	grid-template-columns: repeat(4, 20vw) auto;
 	grid-template-rows: repeat(4, 25vh);
 	grid-template-areas:
 		"cel1 cel2 cel4 cel6 cel9"
