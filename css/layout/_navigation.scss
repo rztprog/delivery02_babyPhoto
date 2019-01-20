@@ -5,12 +5,10 @@
 		justify-content: center;
 		align-items: center;
 
-		.topnav__list-item{
-			list-style-type: none;
-			margin: 0 1.875rem 0 1.875rem;
-
-			.topnav__list-item-second{
+		.topnav__list-item--second{
 				background-color: $col2;
+				-webkit-clip-path: circle(30.0% at 51% 49%);
+				clip-path: circle(30.0% at 51% 49%);
 				// justify-self: center;				
 			
 				.topnav__list-item--logo{
@@ -19,6 +17,11 @@
 				// height: 50%;
 				}
 			}
+
+		.topnav__list-item{
+			list-style-type: none;
+			margin: 0 1.875rem 0 1.875rem;
+
 
 			.topnav__list-item--link{
 				font-size: 2rem;
@@ -84,6 +87,8 @@
 		align-items: center;
 
 		.botnav__list-item{
+			-webkit-clip-path: circle(50.0% at 50% 50%);
+			clip-path: circle(50.0% at 50% 50%);
 			list-style-type: none;
 		}
 	}
